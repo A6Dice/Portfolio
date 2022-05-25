@@ -64,24 +64,25 @@ footer {
 }
 
 .h1Footer {
-    color: cadetblue;
+    color: orange;
 }
 
 .midcontent {
-    padding-left: 5%;
+    padding-left: 8%;
+    padding-top: 4%;
 }
 
 h1 {
     color: white;
-    font-size: 30px;
-    margin-top: 2%;
+    font-size: 35px;
+    animation: view 6s, slidey 2.5s; 
 }
 
 hr {
     border: 0.5px solid orange;
     width: 30%;
     opacity: 1;
-    animation: slide 2s;
+    animation: slide 3s;
 
 }
 
@@ -100,7 +101,20 @@ p {
 }
 
 @keyframes view {
-    from {}
+    from {
+    opacity: 0%;
+    }
 
-    to {}
+    to {
+    opacity: 100%;
+    }
+}
+
+@keyframes slidey{
+    from{
+    transform:translateY(100%);
+    }
+    to{
+    transform: translateY(0%);
+    }
 }
