@@ -66,8 +66,10 @@ footer{
 
 h1{
     color: white;
+    font-size: medium;
 }
 
 hr{
-    border: 1px solid white;
+    color: white;
+    height: 6%;
 }
