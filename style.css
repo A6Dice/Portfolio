@@ -80,7 +80,7 @@ h1 {
 
 .hr1 {
     border: 0.5px solid orange;
-    width: 40%;
+    width: 35%;
     opacity: 1;
     animation: slide 3s;
 
@@ -112,13 +112,17 @@ p {
     text-decoration-color: orange; 
     text-decoration-line: underline;
     animation: animate 1s linear infinite;
+    opacity: .4;
 }
 .saw{
     animation: view 4s;
 }
 
 .circle{
-    
+width: 200px;
+height: 200px;
+background: linear-gradient(#33ccff, #ff0066);
+border-radius: 50%;
 }
 
 @keyframes animate {
@@ -137,7 +141,7 @@ p {
     }
 
     to {
-        width: 40%;
+        width: 35%;
     }
 }
 
