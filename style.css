@@ -75,12 +75,12 @@ footer {
 h1 {
     color: white;
     font-size: 35px;
-    animation: view 6s, slidey 2.5s; 
+    animation: view 6s, slidey 2.5s;
 }
 
-hr {
+.hr1 {
     border: 0.5px solid orange;
-    width: 30%;
+    width: 40%;
     opacity: 1;
     animation: slide 3s;
 
@@ -90,31 +90,73 @@ p {
     color: orange;
 }
 
+.icons {
+    margin-top: 175px;
+}
+
+.loader {
+    width: 250px;
+    height: 50px;
+    overflow: hidden; 
+    background: black;
+}
+
+.loader:before {
+    content: attr(data-text);
+    position: relative;
+    top: -65px;
+    color: black;
+    width: calc(100% + 27px);
+    font-size: 4em;
+    text-decoration-style: wavy;
+    text-decoration-color: orange; 
+    text-decoration-line: underline;
+    animation: animate 1s linear infinite;
+}
+.saw{
+    animation: view 4s;
+}
+
+.circle{
+    
+}
+
+@keyframes animate {
+    0% {
+        left: 2px;
+    }
+
+    100% {
+        left: -30px;
+    }
+}
+
 @keyframes slide {
     from {
         width: 0%;
     }
 
     to {
-        width: 30%;
+        width: 40%;
     }
 }
 
 @keyframes view {
     from {
-    opacity: 0%;
+        opacity: 0%;
     }
 
     to {
-    opacity: 100%;
+        opacity: 100%;
     }
 }
 
-@keyframes slidey{
-    from{
-    transform:translateY(100%);
+@keyframes slidey {
+    from {
+        transform: translateY(100%);
     }
-    to{
-    transform: translateY(0%);
+
+    to {
+        transform: translateY(0%);
     }
 }
