@@ -118,13 +118,6 @@ p {
     animation: view 4s;
 }
 
-.circle{
-width: 200px;
-height: 200px;
-background: linear-gradient(#33ccff, #ff0066);
-border-radius: 50%;
-}
-
 @keyframes animate {
     0% {
         left: 2px;
