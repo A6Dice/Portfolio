@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RekanSalehWebsite</title>
-  <!-- CSS only -->
+  <!-- css only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -16,18 +16,18 @@
 
   <header>
     <div id="header1">
-      <a class="button Hbutton" href="#" role="button">Home</a>
-      <a class="button Hbutton" href="#" role="button">Work</a>
-      <a class="button Hbutton" href="#" role="button">About me</a>
+      <a class="button Hbutton tablink" role="button" onclick="openPage('Home')" id="defaultOpen">Home</a>
+      <a class="button Hbutton tablink" role="button" onclick="openPage('Work')">Work</a>
+      <a class="button Hbutton tablink" role="button" onclick="openPage('Aboutme')">About me</a>
     </div>
     <div id="header2">
-      <a class="button Hbutton" href="#" role="button">Contact</a>
+      <a class="button Hbutton tablink" role="button" onclick="openPage('Contact')">Contact</a>
     </div>
 
   </header>
   <div class="container">
 
-    <div class="midcontent">
+    <div id="Home" class="midcontent tabcontent">
 
       <div class="row-md-12">
         <h1>
@@ -46,8 +46,8 @@
        
         <div class="col-md-6">
           <div class="saw">
-            <img class="icons" src="/Portfolio/Images/linkedin (1).png" width="75px" height="75px" alt="linkedIn icon">
-            <img class="icons" src="/Portfolio/Images/github.png" width="75px" height="75px" alt="github icon">
+            <a href="https://www.linkedin.com/in/rekan-s-2257a9172/" alt="linkedIn"><img class="icons" src="/Portfolio/Images/linkedin (1).png" width="75px" height="75px" alt="linkedIn icon"></a>
+            <a href="https://github.com/A6Dice" alt="github"><img class="icons" src="/Portfolio/Images/github.png" width="75px" height="75px" alt="github icon"></a>
             <img class="icons" src="/Portfolio/Images/email.png" width="75px" height="75px" alt="mail icon">
           </div>
           <div class="loader" data-text="loaderloader">
@@ -68,17 +68,38 @@
         </div>
 
       </div>
+  
+      
+    </div>
 
+  </div>
+
+  <div id="Work" class="tabcontent">
+    <div class="box">
+      
     </div>
   </div>
+
+  <div id="Aboutme" class="tabcontent">
+    <h1 style="background-color:blue;">About me</h1>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h1 style="background-color:blue;">Contact</h1>
+  </div>
+
 
 
   <!-- Here are the inspirations and sources for my website:
       https://www.yukiasakura.com/
       https://nad.is/ 
       https://www.flaticon.com
-      https://www.youtube.com/watch?v=BfdHnxpnQyw -->
+      https://www.youtube.com/watch?v=BfdHnxpnQyw 
+      https://www.w3schools.com/howto/howto_js_full_page_tabs.asp 
+      https://tripeakstudio.com/ 
+      https://www.adobe.com/nl/products/aftereffects.html -->
 
+    <script src="script.js"></script>
 </body>
 
 </html>

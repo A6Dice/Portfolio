@@ -4,22 +4,22 @@ let letterIndex = 0;
 let currentText = "";
 let letter = "";
 
-(function type() {
-  if (word == texts.length) {
-    word = 0;
-  }
+// (function type() {
+//   if (word == texts.length) {
+//     word = 0;
+//   }
 
-  currentText = texts[word];
-  letter = currentText.slice(0, ++letterIndex);
-  document.querySelector("#typing").textContent = letter;
+//   currentText = texts[word];
+//   letter = currentText.slice(0, ++letterIndex);
+//   document.querySelector("#typing").textContent = letter;
 
-  if (letter.length == currentText.length) {
-    word++;
-    letterIndex = 0;
-  }
+//   if (letter.length == currentText.length) {
+//     word++;
+//     letterIndex = 0;
+//   }
 
-  setTimeout(type, 300);
-})();
+//   setTimeout(type, 300);
+// })();
 // link van de code is: https://codepen.io/WhosMonica/pen/gOoLjze
 
 //New page directory link: https://www.w3schools.com/howto/howto_js_full_page_tabs.asp
@@ -42,7 +42,7 @@ function openPage(pageName, elmnt) {
   document.getElementById(pageName).style.display = "block";
 
   // Add the specific color to the button used to open the tab content
-  elmnt.style.backgroundColor = color;
+  // elmnt.style.backgroundColor = color;
 }
 
 // Get the element with id="defaultOpen" and click on it
