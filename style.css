@@ -88,7 +88,6 @@ h1 {
     width: 35%;
     opacity: 1;
     animation: slide 3s;
-
 }
 
 p {
@@ -124,16 +123,81 @@ p {
     animation: view 4s;
 }
 
-.learnmore{
+.learnmore {
     text-decoration: none;
     background-color: black;
     color: white;
     transition: 0.5s;
 }
+
 .learnmore:hover {
     color: orange;
-  }
-  
+}
+
+/* CSS of work */
+.projects {
+background-color: orange;
+}
+.projects1 {
+    margin: 50px;
+    column-gap: 5px !important;
+    column-count: 2 !important;
+}
+
+.GLR{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    text-decoration-color: orange;
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+}
+
+.GLR:hover{
+ color: orange;
+}
+
+
+/* css of about me */
+.aboutdiv {
+font-size: large;
+padding-left: 8%;
+padding-top: 4%;
+}
+
+.habout {
+    color: orange;
+    background-color: black;
+}
+
+.para1 {
+    background-color: black;
+    color: white;
+    margin-top: 50px !important;
+    animation: view2 2s, slidey 2s;
+    opacity: 70%;
+    width: 75%;
+}
+
+.para2 {
+    background-color: black;
+    color: white;
+    margin-top: 50px !important;
+    animation: view2 4s, slidey 4s;
+    opacity: 70%;
+    width: 75%;
+}
+
+.para3{
+    background-color: black;
+    color: white;
+    margin-top: 50px !important;
+    animation: view2 4s, slidey 4s;
+    opacity: 70%;
+    width: 75%;
+}
+
 @keyframes animate {
     0% {
         left: 2px;
@@ -171,5 +235,15 @@ p {
 
     to {
         transform: translateY(0%);
+    }
+}
+
+@keyframes view2{
+    from{
+opacity: 0%;
+    }
+    
+    to{
+opacity: 70%;
     }
 }
