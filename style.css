@@ -198,6 +198,35 @@ padding-top: 4%;
     width: 75%;
 }
 
+.ptext{
+font-size: 30px;
+margin-left: 5px;
+}
+
+.mailmeIcon{
+ height: 3rem;
+ background-color: black;
+ color: black;
+}
+
+.GLR2{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    text-decoration-color: orange;
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+}
+.GLR2:hover{
+    color: lightblue;
+   }
+
+.contact{
+    align-: center;
+}
+   
+
 @keyframes animate {
     0% {
         left: 2px;
