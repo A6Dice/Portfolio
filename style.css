@@ -198,6 +198,13 @@ padding-top: 4%;
     width: 75%;
 }
 
+.phone{
+    color: white;
+    height: 3rem;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
 .ptext{
 font-size: 30px;
 margin-left: 5px;
@@ -223,7 +230,8 @@ margin-left: 5px;
    }
 
 .contact{
-    align-: center;
+    margin-top: 150px;
+    animation: view 4s;
 }
    
 
