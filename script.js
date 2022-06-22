@@ -37,6 +37,7 @@ function openPage(pageName, elmnt) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
+  
 
   // Show the specific tab content
   document.getElementById(pageName).style.display = "block";
@@ -48,3 +49,7 @@ function openPage(pageName, elmnt) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
+$("").click(function(){
+  $(this).css("color","orange");
+  $(this).siblings().css("color","white");
+})
